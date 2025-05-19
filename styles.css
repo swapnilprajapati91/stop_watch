@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0568fc;
+}
+
+.container {
+    background: rgb(250, 249, 249);
+    padding: 15rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.stopwatch {
+    text-align: center;
+    position: fixed;
+    top: 140px;
+    transform: translateX(-160px); 
+    
+}
+
+.display {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startBtn {
+    background: #4CAF50;
+    color: white;
+}
+
+#stopBtn {
+    background: #f44336;
+    color: white;
+}
+
+#resetBtn {
+    background: #2196F3;
+    color: white;
+}
+
+#lapBtn {
+    background: #FF9800;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.history {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.history h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lap-times {
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.lap-time {
+    padding: 0.5rem;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+}
+
+.lap-time:last-child {
+    border-bottom: none;
+}
+
+.lap-number {
+    font-weight: bold;
+    color: #333;
+} 
